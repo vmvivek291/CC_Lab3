@@ -96,12 +96,12 @@ def list_products():
 
     products = [row for row in cursor.fetchall()]
     
-    products = []
-    rows = cursor.fetchall()
+    # products = []
+    # rows = cursor.fetchall()
     
-    for i in range(len(rows)):
-        temp = rows[i]
-        products.append(temp)
+    # for i in range(len(rows)):
+    #     temp = rows[i]
+    #     products.append(temp)
     
     cursor.close()
     conn.close()
